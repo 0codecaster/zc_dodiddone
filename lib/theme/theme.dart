@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 class DoDidDoneTheme {
   static ThemeData lightTheme = ThemeData(
     colorScheme: ColorScheme.fromSeed(
-      seedColor: const Color(0xFF4CEF8A), // Основной цвет #4CEF8A
+      seedColor: const Color(0xFFB22222), // Основной цвет #000000
       brightness: Brightness.light,
-      primary: const Color(0xFF4CEF8A), // Второй цвет #9F7BF4
+      primary: const Color(0xFF0000FF), // Второй цвет #F4A460
       onPrimary: Colors.white, // Текст на основном цвете - белый
-      secondary: const Color(0xFF9F7BF4), // Основной цвет #4CEF8A
+      secondary: const Color(0xFF8A2BE2), // Основной цвет #000000
       onSecondary: Colors.white, // Текст на втором цвете - белый
       surface: Colors.white,
       onSurface: Colors.black,
@@ -20,6 +20,13 @@ class DoDidDoneTheme {
         textStyle: MaterialStateProperty.all<TextStyle>(
             const TextStyle(color: Colors.white)), // Белый текст
       ),
+    ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      selectedItemColor: const Color(0xFF0000FF), // Цвет выбранной иконки
+      unselectedItemColor:
+          const Color(0xFFB22222).withOpacity(0.5), // Цвет невыбранной иконки
+      backgroundColor: Colors.transparent, // Прозрачный фон
+      // Убираем тень
     ),
   );
 }
