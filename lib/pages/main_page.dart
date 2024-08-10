@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/all_tasks.dart';
 import '../screens/profile.dart'; // Импортируем страницу профиля
 import '../theme/theme.dart'; // Импортируем файл с темой
 
@@ -14,7 +15,7 @@ class _MainPageState extends State<MainPage> {
 
   // Список виджетов для каждой вкладки
   final List<Widget> _widgetOptions = <Widget>[
-    Text('Задачи'),
+    TasksPage(),
     Text('Сегодня'),
     ProfilePage(), // Заменяем Text на ProfilePage
     Text('Выполнено'),
