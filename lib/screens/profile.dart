@@ -20,12 +20,12 @@ class _ProfilePageState extends State<ProfilePage> {
           CircleAvatar(
             radius: 50,
             backgroundImage: const AssetImage(
-                'assets/_1.png'), // Замените на реальный путь к аватару
+                'assets/ava09.png'), // Замените на реальный путь к аватару
           ),
           const SizedBox(height: 20),
           // Почта
           Text(
-            'example@email.com', // Замените на реальную почту пользователя
+            'email.me.a1isa@0sg.net', // Замените на реальную почту пользователя
             style: const TextStyle(fontSize: 18),
           ),
           const SizedBox(height: 10),
